@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <title>Documentação ArcellorMittal</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentação desenvolvida pelo b8one"> 
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/coderdocs-logo.svg" alt="logo"><span class="logo-text">Documentação ArcelorMittal</span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Overview</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Store-theme</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Componentes Básicos</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Stack</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Organização das Pastas</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Rodando o Projeto</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Como criar uma workspace</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Lista de Componentes</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Cookies Pop-up</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Custom Price</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Autorização para acesso ao site</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Controle de acesso</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Checkout</a></li>
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Overview <span class="docs-time">Last updated: 10-19-2022</span></h1>
+					    <section class="docs-intro">
+						    <p>
+								O repositório ArcelorMittal, é composto pelo template de B2B Store-theme que compõe a parte de front-end, onde são possíveis fazer algumas alterações e ajustes de acordo com a base, já disponibilizada pela VTEX.
+							</p>
+							<p>
+								Apresentaremos nos tópicos seguintes a composição do store-theme, referente aos blocos da vtex, componentes, estrutura de pastas, checkout e informações de configurações para acessar e rodar o projeto em questão.
+							</p>
+						</section><!--//docs-intro-->	
+
+<!-- </code></pre>			 -->
+				    </header>
+			    </article>
+			    
+			    <article class="docs-article" id="section-2">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Store-theme</h1>
+					    <section class="docs-intro">
+						    <p>A seguir está  uma tabela com uma descrição sucinta das páginas e funcionalidades que envolvem o store-theme da VTEX para melhor compreensão.</p>
+							<div class="container text-center">
+						        <img class="figure-img img-fluid shadow rounded" src="assets/images/vtex-pages-table.png" alt="Tabela com descrição das páginas pertencentes a vtex" title="Tabela página da vtex"/>
+							</div>	
+						</section><!--//docs-intro-->
+					</header>
+				     <section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">Componentes Básicos</h2>
+						<ul>
+							<li>
+								<h3>
+									Store-header:
+								</h3>
+								<p>
+									O app Header é responsável por exibir uma barra de navegação fixada na parte superior da página de uma loja. Outros blocos importantes para a navegação do usuário são encontrados no Header, por exemplo, o logotipo da loja, o mini-carrinho, login do usuário e a barra de pesquisa.
+								</p>
+							</li>
+							<li>
+								<h3>
+									Login:
+								</h3>
+								<p>
+									É responsável por tratar o login do usuário em sua loja, depois da instalação deste app, será possível usar os blocos exportados do app.
+								</p>
+							</li>
+							<li>
+								<h3>
+									Menu:
+								</h3>
+								<p>
+									O menu é um componente da loja responsável por exibir uma barra contendo links e sub-menus drop-down.
+								</p>
+							</li>
+							<li>
+								<h3>
+									Minicart:
+								</h3>
+								<p>
+									É um bloco que exibe uma lista resumida de todos os itens adicionados pelos clientes em seu carrinho de compras. Seus dados são buscados na API “Checkout OrderForm”.
+								</p>
+							</li>
+							<li>
+								<h3>
+									Search:
+								</h3>
+								<p>
+									O aplicativo VTEX Search, fornece novos componentes de interface do usuário que aprimoram a experiência de pesquisa, como o recurso de preenchimento automático.
+								</p>
+							</li>
+							<li>
+								<h3>
+									Search-result:
+								</h3>
+								<p>
+									É responsável por tratar o resultado buscado pela API VTEX Search e exibi-lo aos usuários, o aplicativo exporta todos os blocos de loja esperados em uma página de resultados de pesquisa, como os filtros e a galeria de produtos.
+								</p>
+							</li>
+							<li>
+								<h3>
+									Breadcrumb:
+								</h3>
+								<p>
+									O VTEX BreadCrumb é um esquema de navegação que mostra o histórico de navegação de um usuário até sua localização atual em sua loja.
+								</p>
+							</li>
+							<li>
+								<h3>
+									Product Summary:
+								</h3>
+								<p>
+									É um aplicativo responsável por resumir as informações do produto (como nome, preço e imagem) em outros blocos da loja, como a Prateleira e o mini-carrinho.
+								</p>
+							</li>
+							<li>
+								<h3>
+									Product Highlights:
+								</h3>
+								<p>
+									O app Product Highlights disponibiliza blocos para exibir selos de destaque nos produtos de acordo com a coleção ou promoção a que estão vinculados.
+								</p>
+							</li>
+							<li>
+								<h3>
+									Product Identifier:
+								</h3>
+								<p>
+									O aplicativo identificador de produto é responsável por mostrar um identificador de produto, como: referência do produto, ID do produto ou sku.
+								</p>
+							</li>
+							<li>
+								<h3>
+									Product List:
+								</h3>
+								<p>
+									O componente lista de produtos exibe todos os itens no carrinho do usuário e informa ao usuário quando alguns deles estão indisponíveis.
+								</p>
+							</li>
+							<li>
+								<h3>
+									Product Price:
+								</h3>
+								<p>
+									O app preço do produto é responsável por exportar blocos relacionados ao preço do produto, como preço de tabela, preço de venda e desconto.
+								</p>
+							</li>
+							<li>
+								<h3>
+									Product Quantity:
+								</h3>
+								<p>
+									A quantidade do produto permite que os usuários adicionem uma quantidade escolhida do produto exibido em seu carrinho, na página de produto ou no product summary.
+								</p>
+							</li>
+							<li>
+								<h3>
+									Product Specifications:
+								</h3>
+								<p>
+									As especificações do produto é um aplicativo que providencia os blocos para renderizar as informações de especificações de cada produto.
+								</p>
+							</li>
+							<li>
+								<h3>
+									Add-to-cart-button:
+								</h3>
+								<p>
+									O botão add-to-cart é um bloco responsável por adicionar produtos no Minicart.
+								</p>
+							</li>
+							<li>
+								<h3>
+									Rich Text:
+								</h3>
+								<p>
+									O bloco Rich Text converte textos escritos em Markdown em HTML e os exibe em sua vitrine.
+								</p>
+							</li>
+							<li>
+								<h3>
+									Store-image: 
+								</h3>
+								<p>
+									O aplicativo Store Image exporta o bloco “list-context.image-list”, que é responsável por trabalhar com o conteúdo da imagem no tema da loja.
+								</p>
+							</li>
+							<li>
+								<h3>
+									Store-footer: 
+								</h3>
+								<p>
+									É um componente da loja que mostra informações sobre a loja como endereço, redes sociais e formas de pagamento. Além disso, é possível adicionar hiperlinks para política de privacidade, FAQ, benefícios e atendimento. Este aplicativo é usado pelo tema da loja.
+								</p>
+							</li>
+						</ul>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Stack</h1>
+					    <section class="docs-intro">
+						    <p>
+								Para implementação do front-end na plataforma VTEX, foram utilizadas as seguintes linguagens de desenvolvimento: 
+							</p>
+							<uL>
+								<li>
+									<h3>
+										Node JS;
+									</h3>
+								</li>
+								<li>
+									<h3>
+										JS;
+									</h3>
+								</li>
+								<li>
+									<h3>
+										React.js;
+									</h3>
+								</li>
+								<li>
+									<h3>
+										TS;
+									</h3>
+								</li>
+								<li>
+									<h3>
+										GraphQL;
+									</h3>
+								</li>
+								<li>
+									<h3>
+										CSS;
+									</h3>
+								</li>
+							</ul>
+						</section><!--//docs-intro-->
+				    </header>
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-4">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Organização de Pastas</h1>
+					    <p class="docs-intro">
+						    <p>A imagem abaixo mostra a pasta raiz do projeto, com a estrutura de diretórios, a parte dos blocos que compõem e formam o site encontra-se dentro da pasta store e possuem seus arquivos com formato padrão jsonc. A estilização geral dos arquivos da pasta store encontra-se dentro de pasta styles, onde nesse projeto foi utilizado css.</p>
+							<div class="container text-center">
+						        <img class="figure-img img-fluid p-3" src="assets/images/pastas-1.png" alt="" title="Tabela página da vtex"/>
+								<img class="figure-img img-fluid" src="assets/images/pastas-3.png" alt="" title="Tabela página da vtex"/>
+							</div>	
+							<p>
+								A pasta de react armazena todos os componentes que foram criados de acordo com as necessidades exigidas pelo projeto. E por fim, dentro da pasta checkout-ui-custom encontra-se todas as estilizações (arquivos .css) do checkout; o html do header e footer que são anexados no página de admin da vtex e a parte de funcionalidade adicional da que vem padrão da vtex, que encontra-se nos arquivos de javascript.
+							</p>
+						</section><!--//docs-intro-->
+				    </header>
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-5">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Rodando o Projeto</h1>
+					    <section class="docs-intro">
+							<ul>
+								<li>
+									<p>
+										Dentro do repositório do store-theme, inicialmente instale ou use a versão do no 16.15.1, você consegue verificar isso com o comando abaixo, a ser digitado no terminal:
+									</p>
+									<div class="container text-center">
+										<img class="figure-img img-fluid p-3" src="assets/images/comando-1.png" alt="" title="Tabela página da vtex"/>
+									</div>	
+								</li>
+								<li>
+									<p>
+										Dentro do repositório do store-theme, inicialmente instale ou use a versão do no 16.15.1, você consegue verificar isso com o comando abaixo, a ser digitado no terminal:
+									</p>
+									<div class="container text-center">
+										<img class="figure-img img-fluid p-3" src="assets/images/comando-2.png" alt="" title="Tabela página da vtex"/>
+									</div>	
+								</li>
+								<li>
+									<p>
+										Em seguida faça login dentro da loja na vtex (arcelormittaltesteb2b) utilizando o seguinte comando:
+									</p>
+									<div class="container text-center">
+										<img class="figure-img img-fluid p-3" src="assets/images/comando-3.png" alt="" title="Tabela página da vtex"/>
+									</div>	
+								</li>
+							</ul>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-5-1">
+						<h2 class="section-heading">Como criar uma workspace</h2>
+						<ul>
+							<li>
+								<p>
+									Após os passos anteriores você terá que criar uma workspace para linkar o projeto, para isso utilize o seguinte comando no terminal:
+								</p>
+								<div class="container text-center">
+									<img class="figure-img img-fluid p-3" src="assets/images/comando-4.png" alt="" title="Tabela página da vtex"/>
+								</div>	
+							</li>
+							<li>
+								<p>
+									Depois basta rodar o comando vtex link -c -v no terminal da seguinte maneira: 
+								</p>
+								<div class="container text-center">
+									<img class="figure-img img-fluid p-3" src="assets/images/comando-5.png" alt="" title="Tabela página da vtex"/>
+								</div>	
+							</li>
+							<li>
+								<p>
+									Ao final aparecerá a url que deve ser utilizada, como no exemplo a seguir:
+								</p>
+								<div class="container text-center">
+									<img class="figure-img img-fluid p-3" src="assets/images/comando-6.png" alt="" title="Tabela página da vtex"/>
+								</div>	
+							</li>
+						</ul>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+		        <article class="docs-article" id="section-6">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Lista de Componentes</h1>
+					    <section class="docs-intro">
+						    <p>
+								Os componentes citados abaixo são aqueles que encontram-se dentro da pasta react, como já citado anteriormente no item sobre organização de pastas, nesse tópico será explicado sucintamente, sobre o que componente é responsável.
+							</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-6-1">
+						<h2 class="section-heading">Cookies Pop-up</h2>
+						<p>
+							O componente PopupControlCookies, refere-se a pop-up que aparece na página inicial quando a pessoa realiza o login de um aparelho que está sendo utilizado pela primeira vez para acessar o site, assim que o usuário entra no site aparecerá o seguinte pop-up:
+						</p>
+						<div class="container text-center">
+							<img class="figure-img img-fluid p-3" src="assets/images/site-3.png" alt="" title="Tabela página da vtex"/>
+						</div>	
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-6-2">
+						<h2 class="section-heading">Custom Price</h2>
+						<p>
+							Na realidade são dois componentes com o mesmo princípio, como o próprio nome já indica, trata-se de dois componentes para customizar o preço de acordo com as regras de negócios pré-estabelecidas. O componente CustomPrice, customiza os valores dos produtos em todos os cards de produtos, enquanto o CustomPricePdp, é responsável por modificar os valores dos produtos especificamente na página de produto.
+						</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-6-3">
+						<h2 class="section-heading">Autorização para acesso ao site</h2>
+						<p>
+							Os componentes renderizados responsáveis são o AuthContext e AuthPageContainer, de maneira geral esses componentes limitam o acesso do usuário ao site, tendo que ser feito uma validação através de cadastro por meio desta página: 
+						</p>
+						<div class="container text-center">
+							<img class="figure-img img-fluid p-3" src="assets/images/site-1.png" alt="" title="Tabela página da vtex"/>
+						</div>	
+						<p>
+							Após cadastro, o usuário será redirecionado para uma página de confirmação do cadastro e de resposta da validação do mesmo. 
+						</p>
+						<div class="container text-center">
+							<img class="figure-img img-fluid p-3" src="assets/images/site-2.png" alt="" title="Tabela página da vtex"/>
+						</div>	
+						<p>
+							Após o cadastro confirmado o usuário passa ter acesso ao site, tendo que logar com email e senha ou código de acesso.
+						</p>
+						</section><!--//section-->
+					<section class="docs-section" id="item-6-4">
+						<h2 class="section-heading">Controle de acesso</h2>
+						<p>
+							O componente SessionController é utilizado para complementar a validação do usuário, verificando quando usuário tenta acessar o site se este possui autorização ou não, caso a validação seja negativa haverá um redirecionamento para a seguinte tela: 
+						</p>
+						<div class="container text-center">
+							<img class="figure-img img-fluid p-3" src="assets/images/site-4.png" alt="" title="Tabela página da vtex"/>
+						</div>	
+				</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="section-7">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Checkout</h1>
+					    <section class="docs-intro">
+						    <p>
+								O checkout no repositório é composto pelos arquivos de estilização (CSS), estruturação do header e footer (HTML), que são exclusivos do checkout e funcionalidades nos arquivos de javascript. Lembrando que a vtex é a responsável pelo fluxo de compra, e estruturação do checkout, ou seja, os arquivos existentes no repositório não alteram a questão do fluxo de compra.
+							</p>
+							<div class="container text-center">
+								<img class="figure-img img-fluid p-3" src="assets/images/pastas-4.png" alt="" title="Tabela página da vtex"/>
+							</div>	
+							<p>
+								Para adicionar o checkout no admin é necessário seguir os seguintes passos, acesse o interface personalizada do checkout em configurações da loja. 
+							</p>
+							<div class="container text-center">
+								<img class="figure-img img-fluid p-3" src="assets/images/checkout-1.png" alt="" title="Tabela página da vtex"/>
+							</div>	
+							<p>
+								Após esse passo será necessário entrar na aba CSS e colar todo o conteúdo do css que está no repositório com o nome de checkout6-custom.css, depois disso deixe o botão localizado na parte inferior da tela ativado e por fim clique no botão “PUBLICAR”, localizado no canto superior direito da tela. Depois repita o mesmo processo para a aba de JavaScript, cole o conteúdo encontrado no repositório no arquivo com o nome checkout6-custom.js e siga os demais passos. 
+							</p>
+							<div class="container text-center">
+								<img class="figure-img img-fluid p-3" src="assets/images/checkout-2.png" alt="" title="Tabela página da vtex"/>
+							</div>	
+						</section><!--//docs-intro-->
+				    </header>
+			    </article><!--//docs-article-->
+			    
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+			            <small class="copyright">Documentação desenvolvida pela <b>B8one</b></small>
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html> 
+
